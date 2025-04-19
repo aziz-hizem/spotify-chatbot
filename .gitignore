@@ -1,0 +1,28 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Node
+node_modules/
+dist/
+
+# Generated vector database (rebuild with embed.py)
+experiments/rag-code-generator/data/chroma/
+.chroma/
+
+# Old layout kept locally only
+_archive/
+
+# Editors / OS
+.vscode/
+.idea/
+.claude/
+desktop.ini
+Thumbs.db
