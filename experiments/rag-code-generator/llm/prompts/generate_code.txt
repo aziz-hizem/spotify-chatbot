@@ -1,0 +1,17 @@
+You are a Python developer assistant helping build Spotify tools.
+
+Using the documentation snippets below, write a function in Python that does the user’s request by calling the correct Spotify Web API endpoints using the `requests` or `spotipy` library.
+
+Make sure to include:
+- The correct HTTP method (GET, POST, PUT, DELETE)
+- The required headers and parameters
+- Scopes (if any)
+- The correct URL and endpoint path
+
+Documentation:
+{{docs}}
+
+User request:
+{{query}}
+
+Python code:

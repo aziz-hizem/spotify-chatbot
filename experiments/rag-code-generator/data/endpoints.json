@@ -1,0 +1,794 @@
+[
+  {
+    "title": "Add Item to Playback Queue",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/add-to-queue",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Search for Item",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/search",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get User's Saved Shows",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-users-saved-shows",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Artist",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-an-artist",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Seek To Position",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/seek-to-position-in-currently-playing-track",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Available Devices",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-a-users-available-devices",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get User's Profile",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-users-profile",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Remove User's Saved Shows",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/remove-shows-user",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Current User's Playlists",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-a-list-of-current-users-playlists",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Follow Playlist",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/follow-playlist",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Set Playback Volume",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/set-volume-for-users-playback",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Audiobook Chapters",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-audiobook-chapters",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Add Items to Playlist",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/add-tracks-to-playlist",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Several Tracks",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-several-tracks",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Track's Audio Features",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-audio-features",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Check User's Saved Episodes",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/check-users-saved-episodes",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Check User's Saved Albums",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/check-users-saved-albums",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Transfer Playback",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/transfer-a-users-playback",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Several Tracks' Audio Features",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-several-audio-features",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get User's Saved Albums",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-users-saved-albums",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Playlist",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-playlist",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Skip To Previous",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/skip-users-playback-to-previous-track",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Show Episodes",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-a-shows-episodes",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Unfollow Playlist",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/unfollow-playlist",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Save Episodes for Current User",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/save-episodes-user",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get an Audiobook",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-an-audiobook",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Available Genre Seeds",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-recommendation-genres",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Artist's Albums",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-an-artists-albums",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Artist's Top Tracks",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-an-artists-top-tracks",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get a Chapter",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-a-chapter",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Track",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-track",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get User's Saved Audiobooks",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-users-saved-audiobooks",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Unfollow Artists or Users",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/unfollow-artists-users",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Remove Users' Saved Albums",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/remove-albums-user",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Remove User's Saved Audiobooks",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/remove-audiobooks-user",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Check User's Saved Shows",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/check-users-saved-shows",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Save Albums for Current User",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/save-albums-user",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Available Markets",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-available-markets",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Remove Playlist Items",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/remove-tracks-playlist",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Current User's Profile",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-current-users-profile",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Several Chapters",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-several-chapters",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Check User's Saved Audiobooks",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/check-users-saved-audiobooks",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Remove User's Saved Tracks",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/remove-tracks-user",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Check User's Saved Tracks",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/check-users-saved-tracks",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Update Playlist Items",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/reorder-or-replace-playlists-tracks",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Remove User's Saved Episodes",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/remove-episodes-user",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Artist's Related Artists",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-an-artists-related-artists",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Set Repeat Mode",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/set-repeat-mode-on-users-playback",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Category's Playlists",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-a-categories-playlists",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Album Tracks",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-an-albums-tracks",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Save Audiobooks for Current User",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/save-audiobooks-user",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Save Shows for Current User",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/save-shows-user",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Add Custom Playlist Cover Image",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/upload-custom-playlist-cover",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Pause Playback",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/pause-a-users-playback",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Toggle Playback Shuffle",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/toggle-shuffle-for-users-playback",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Episode",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-an-episode",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Album",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-an-album",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Several Browse Categories",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-categories",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Start/Resume Playback",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/start-a-users-playback",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Change Playlist Details",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/change-playlist-details",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Featured Playlists",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-featured-playlists",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Playlist Items",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-playlists-tracks",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Currently Playing Track",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-the-users-currently-playing-track",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Skip To Next",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/skip-users-playback-to-next-track",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Save Tracks for Current User",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/save-tracks-user",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Check If User Follows Artists or Users",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/check-current-user-follows",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Show",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-a-show",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Check if Current User Follows Playlist",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/check-if-user-follows-playlist",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Several Albums",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-multiple-albums",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get the User's Queue",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-queue",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Create Playlist",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/create-playlist",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get New Releases",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-new-releases",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Playlist Cover Image",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-playlist-cover",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Track's Audio Analysis",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-audio-analysis",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Several Artists",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-multiple-artists",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get User's Top Items",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-users-top-artists-and-tracks",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get User's Saved Tracks",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-users-saved-tracks",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Several Shows",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-multiple-shows",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Recommendations",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-recommendations",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Single Browse Category",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-a-category",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Several Episodes",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-multiple-episodes",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get User's Playlists",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-list-users-playlists",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Follow Artists or Users",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/follow-artists-users",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Recently Played Tracks",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-recently-played",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Followed Artists",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-followed",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get User's Saved Episodes",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-users-saved-episodes",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Several Audiobooks",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-multiple-audiobooks",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  },
+  {
+    "title": "Get Playback State",
+    "method": null,
+    "path": null,
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-information-about-the-users-current-playback",
+    "description": "",
+    "scopes": [],
+    "parameters": {}
+  }
+]
