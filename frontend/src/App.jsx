@@ -4,6 +4,8 @@ import { SendHorizonal } from 'lucide-react';
 import { FaSpotify } from "react-icons/fa";
 import spotifyBg from './assets/backgrounds/spotify_bg.png';
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+
 export default function App() {
   const [messages, setMessages] = useState([
     { role: 'system', content: 'Hello! I can help you interact with your Spotify account. Try: "Add these songs to my chill playlist: Levitating, Blinding Lights"' }
@@ -18,10 +20,11 @@ export default function App() {
     setInput('');
 
     try {
-      const res = await axios.post('http://localhost:8000/chat', { message: input });
+      const res = await axios.post(`${API_URL}/chat`, { message: input });
       const botMessage = { role: 'assistant', content: res.data.response };
       setMessages(prev => [...prev, botMessage]);
     } catch (err) {
+      console.error('Chat request failed:', err);
       const errorMessage = { role: 'assistant', content: '⚠️ Failed to contact backend.' };
       setMessages(prev => [...prev, errorMessage]);
     }

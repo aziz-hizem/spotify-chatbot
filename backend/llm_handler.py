@@ -8,7 +8,9 @@ from .spotify_api import search_song, get_playlist_id_by_name, add_tracks_to_pla
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions" 
+GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
+# llama3-8b-8192 was retired by Groq; override in .env if this one is retired too
+GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
 
 PROMPT_TEMPLATE = """
 You are a helpful assistant for managing Spotify playlists.
@@ -47,7 +49,7 @@ def call_llm(message):
         "Content-Type": "application/json"
     }
     payload = {
-        "model": "llama3-8b-8192",
+        "model": GROQ_MODEL,
         "messages": [
             {"role": "system", "content": "You are a Spotify assistant that responds only with valid JSON."},
             {"role": "user", "content": PROMPT_TEMPLATE.format(message=message)}

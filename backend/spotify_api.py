@@ -1,5 +1,7 @@
 import base64
 import os
+import time
+
 import requests
 from dotenv import load_dotenv
 
@@ -15,12 +17,14 @@ REFRESH_TOKEN = os.getenv("SPOTIFY_REFRESH_TOKEN")
 SPOTIFY_TOKEN_URL = "https://accounts.spotify.com/api/token"
 
 ACCESS_TOKEN = None
+ACCESS_TOKEN_EXPIRES_AT = 0.0
 
 def ensure_token_validity():
-    global ACCESS_TOKEN
+    global ACCESS_TOKEN, ACCESS_TOKEN_EXPIRES_AT
     if not SPOTIFY_CLIENT_ID or not SPOTIFY_CLIENT_SECRET or not REFRESH_TOKEN:
         raise Exception("Missing Spotify credentials. Check your .env file.")
-    if ACCESS_TOKEN:
+    # Reuse the token until a minute before it expires
+    if ACCESS_TOKEN and time.time() < ACCESS_TOKEN_EXPIRES_AT - 60:
         return
     print("[Spotify] Refreshing access token...")
     auth_str = f"{SPOTIFY_CLIENT_ID}:{SPOTIFY_CLIENT_SECRET}"
@@ -42,20 +46,20 @@ def ensure_token_validity():
         raise
     token_data = response.json()
     ACCESS_TOKEN = token_data["access_token"]
+    ACCESS_TOKEN_EXPIRES_AT = time.time() + token_data.get("expires_in", 3600)
     print("[Spotify] Access token refreshed.")
 
 def get_headers():
-    if not ACCESS_TOKEN:
-        ensure_token_validity()
+    ensure_token_validity()
     return {
         "Authorization": f"Bearer {ACCESS_TOKEN}",
         "Content-Type": "application/json"
     }
 
 def search_song(query, type="track"):
-    search_url = f"https://api.spotify.com/v1/search?q={query}&type={type}&limit=5"
+    search_url = "https://api.spotify.com/v1/search"
     headers = get_headers()
-    response = requests.get(search_url, headers=headers)
+    response = requests.get(search_url, headers=headers, params={"q": query, "type": type, "limit": 5})
     if response.status_code != 200:
         print(f"[Spotify] Search failed: {response.text}")
         return None
@@ -70,7 +74,6 @@ def get_all_playlist_names():
     url = playlists_url
     while url:
         response = requests.get(url, headers=headers)
-        print(f"[Spotify] Raw playlist API response: {response.text}")
         if response.status_code != 200:
             print(f"[Spotify] Failed to retrieve playlists: {response.text}")
             return []
@@ -228,49 +231,8 @@ def add_track_to_playlist_by_name(playlist_name, song_name, artist_name=None):
     return add_track_to_playlist(playlist_id, track_uri)
 
 
-
-def get_playlist_id_by_name_og(playlist_name):
-    playlists_url = "https://api.spotify.com/v1/me/playlists"
-    headers = get_headers()
-    all_playlists = []
-    url = playlists_url
-    while url:
-        response = requests.get(url, headers=headers)
-        if response.status_code != 200:
-            print(f"[Spotify] Failed to retrieve playlists: {response.text}")
-            return None
-        data = response.json()
-        items = data.get("items", [])
-        all_playlists.extend(items)
-        url = data.get("next")  # Spotify paginates playlists
-    print("[Spotify] Available playlists:")
-    found = False
-    for playlist in all_playlists:
-        print(f"  - {playlist['name']}")
-        if playlist["name"].lower() == playlist_name.lower():
-            found = True
-            return playlist["id"]
-    if not found:
-        print(f"[Spotify] Playlist '{playlist_name}' not found.")
-    return None
-
-def create_playlist_og(playlist_name, description="Created by Aziz's Spotify Chatbot", public=False):
-    create_url = "https://api.spotify.com/v1/me/playlists"
-    headers = get_headers()
-    data = {
-        "name": playlist_name,
-        "description": description,
-        "public": public
-    }
-    response = requests.post(create_url, headers=headers, json=data)
-    if response.status_code not in (200, 201):
-        print(f"[Spotify] Failed to create playlist: {response.text}")
-        return None
-    playlist = response.json()
-    print(f"[Spotify] Created playlist '{playlist_name}' with ID {playlist['id']}")
-    return playlist["id"]
-
-def add_tracks_to_playlist_og(playlist_id, track_uris):
+def add_tracks_to_playlist(playlist_id, track_uris):
+    ensure_token_validity()
     add_tracks_url = f"https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
     headers = get_headers()
     data = {

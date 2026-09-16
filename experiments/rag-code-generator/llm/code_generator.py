@@ -26,7 +26,7 @@ def generate_code_from_query(query: str) -> str:
             "Content-Type": "application/json"
         },
         json={
-            "model": "llama3-70b-8192",  # or llama2-70b if you're using that
+            "model": os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"),
             "messages": [
                 {"role": "system", "content": "You are a helpful coding assistant."},
                 {"role": "user", "content": prompt}

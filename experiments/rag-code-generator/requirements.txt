@@ -1,0 +1,8 @@
+playwright
+beautifulsoup4
+sentence-transformers
+chromadb
+tqdm
+jinja2
+requests
+python-dotenv
