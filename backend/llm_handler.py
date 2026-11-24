@@ -9,8 +9,8 @@ logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
-# llama3-8b-8192 was retired by Groq; override in .env if this one is retired too
-GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
+# Override in .env if Groq retires this model
+GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-20b")
 
 PROMPT_TEMPLATE = """
 You are a helpful assistant for managing Spotify playlists.

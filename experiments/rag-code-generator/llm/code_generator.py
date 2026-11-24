@@ -26,7 +26,7 @@ def generate_code_from_query(query: str) -> str:
             "Content-Type": "application/json"
         },
         json={
-            "model": os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"),
+            "model": os.getenv("GROQ_MODEL", "openai/gpt-oss-120b"),
             "messages": [
                 {"role": "system", "content": "You are a helpful coding assistant."},
                 {"role": "user", "content": prompt}

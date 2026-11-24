@@ -9,7 +9,7 @@ Manage your Spotify playlists by chatting in plain English. Ask something like *
 ```
 React chat UI ──POST /chat──► FastAPI backend
                                   │
-                                  ├─► Groq (Llama 3.1) ── message → JSON intent
+                                  ├─► Groq (GPT-OSS) ─── message → JSON intent
                                   │     {"intent": "add_songs_to_playlist",
                                   │      "playlist_name": "Road Trip",
                                   │      "songs": ["Blinding Lights", "Levitating"]}
@@ -32,7 +32,7 @@ Currently supported: **adding songs to a playlist**.
 |---|---|
 | Frontend | React 19, Vite, Tailwind CSS, axios |
 | Backend | Python, FastAPI |
-| LLM | Groq API, Llama 3.1 8B Instant |
+| LLM | Groq API, GPT-OSS 20B |
 | Music | Spotify Web API (OAuth 2.0 refresh tokens) |
 
 ## Setup

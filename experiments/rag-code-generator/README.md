@@ -14,7 +14,7 @@ Spotify Web API reference ──scraper.py──► data/endpoints.json
                                         ChromaDB vector store
                                               │  top 5 similar docs
 user request ──► llm/code_generator.py ◄──────┘
-                        │  prompt template (Jinja2) + Groq (Llama 3.3 70B)
+                        │  prompt template (Jinja2) + Groq (GPT-OSS 120B)
                         ▼
                  generated Python code
 ```
